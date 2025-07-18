@@ -1,71 +1,66 @@
-# Assist Hub - AI-Powered Customer Support Platform
+Assist Hub - AI-Powered Customer Support Platform
 
 A comprehensive customer support platform that seamlessly integrates AI assistance with human support agents. Built with React, TypeScript, Express, and PostgreSQL.
 
-![Assist Hub Logo](https://via.placeholder.com/200x100/0052FF/FFFFFF?text=Assist+Hub)
+Unsupported image
+🚀 Features
 
-## 🚀 Features
+    AI-Powered Support: Intelligent AI assistant providing instant responses to customer queries
+    Human Agent Handoff: Seamless escalation from AI to human support agents
+    Real-time Chat: WebSocket-based messaging for instant communication
+    Admin Dashboard: Live monitoring of support sessions and agent management
+    Dual Authentication: Support for both email/password and OAuth authentication
+    Mobile-Responsive: Beautiful, responsive design that works on all devices
+    Professional Branding: Custom blue gradient design with modern UI components
 
-- **AI-Powered Support**: Intelligent AI assistant providing instant responses to customer queries
-- **Human Agent Handoff**: Seamless escalation from AI to human support agents
-- **Real-time Chat**: WebSocket-based messaging for instant communication
-- **Admin Dashboard**: Live monitoring of support sessions and agent management
-- **Dual Authentication**: Support for both email/password and OAuth authentication
-- **Mobile-Responsive**: Beautiful, responsive design that works on all devices
-- **Professional Branding**: Custom blue gradient design with modern UI components
+🛠 Tech Stack
+Frontend
 
-## 🛠 Tech Stack
+    React 18 with TypeScript
+    Vite for fast development and optimized builds
+    Wouter for lightweight client-side routing
+    shadcn/ui components built on Radix UI
+    Tailwind CSS for styling
+    TanStack Query for server state management
+    React Hook Form with Zod validation
 
-### Frontend
-- **React 18** with TypeScript
-- **Vite** for fast development and optimized builds
-- **Wouter** for lightweight client-side routing
-- **shadcn/ui** components built on Radix UI
-- **Tailwind CSS** for styling
-- **TanStack Query** for server state management
-- **React Hook Form** with Zod validation
+Backend
 
-### Backend
-- **Node.js** with Express.js
-- **TypeScript** with ES modules
-- **WebSockets** for real-time communication
-- **PostgreSQL** with Drizzle ORM
-- **OpenAI** integration for AI responses
-- **bcrypt** for secure password hashing
-- **Express sessions** with PostgreSQL storage
+    Node.js with Express.js
+    TypeScript with ES modules
+    WebSockets for real-time communication
+    PostgreSQL with Drizzle ORM
+    OpenAI integration for AI responses
+    bcrypt for secure password hashing
+    Express sessions with PostgreSQL storage
 
-### Infrastructure
-- **Drizzle ORM** for type-safe database operations
-- **Neon PostgreSQL** for serverless database
-- **Session-based authentication** with role management
-- **Graceful error handling** and reconnection logic
+Infrastructure
 
-## 📋 Prerequisites
+    Drizzle ORM for type-safe database operations
+    Neon PostgreSQL for serverless database
+    Session-based authentication with role management
+    Graceful error handling and reconnection logic
 
-- Node.js 18 or higher
-- PostgreSQL database
-- OpenAI API key (optional - graceful fallback available)
+📋 Prerequisites
 
-## 🚀 Quick Start
+    Node.js 18 or higher
+    PostgreSQL database
+    OpenAI API key (optional - graceful fallback available)
 
-### 1. Clone the Repository
+🚀 Quick Start
+1. Clone the Repository
 
-```bash
 git clone https://github.com/yourusername/assist-hub.git
 cd assist-hub
-```
 
-### 2. Install Dependencies
+2. Install Dependencies
 
-```bash
 npm install
-```
 
-### 3. Environment Setup
+3. Environment Setup
 
-Create a `.env` file in the root directory:
+Create a .env file in the root directory:
 
-```env
 # Database (required)
 DATABASE_URL=your_postgresql_connection_string
 
@@ -77,37 +72,25 @@ SESSION_SECRET=your_secure_session_secret
 
 # For OAuth authentication (optional)
 REPLIT_DOMAINS=your-domain.com
-```
 
-### 4. Database Setup
+4. Database Setup
 
-```bash
 # Push database schema
 npm run db:push
-```
 
-### 5. Create Admin User
+5. Create Admin User
 
-```bash
 # Run the admin creation script
 npx tsx create-admin.ts
-```
 
-Default admin credentials:
-- Email: `superadmin@assisthub.com`
-- Password: `assisthub@`
+This will create an admin user with credentials that will be displayed in the terminal output. Save these credentials securely as they provide full administrative access to your platform.
+6. Start Development Server
 
-### 6. Start Development Server
-
-```bash
 npm run dev
-```
 
-The application will be available at `http://localhost:5000`
+The application will be available at http://localhost:5000
+📁 Project Structure
 
-## 📁 Project Structure
-
-```
 assist-hub/
 ├── client/                 # React frontend
 │   ├── src/
@@ -129,95 +112,89 @@ assist-hub/
 ├── shared/               # Shared types and schemas
 │   └── schema.ts         # Database schema definitions
 └── ...config files
-```
 
-## 🔧 Available Scripts
+🔧 Available Scripts
 
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run start` - Start production server
-- `npm run check` - Run TypeScript checks
-- `npm run db:push` - Push database schema changes
+    npm run dev - Start development server
+    npm run build - Build for production
+    npm run start - Start production server
+    npm run check - Run TypeScript checks
+    npm run db:push - Push database schema changes
 
-## 🎯 Core Features
+🎯 Core Features
+AI Support Assistant
 
-### AI Support Assistant
-- Contextual responses using OpenAI GPT models
-- Conversation history awareness
-- Cryptocurrency and NFT specialized knowledge
-- Graceful fallback when AI services are unavailable
+    Contextual responses using OpenAI GPT models
+    Conversation history awareness
+    Cryptocurrency and NFT specialized knowledge
+    Graceful fallback when AI services are unavailable
 
-### Human Support Integration
-- One-click escalation from AI to human agents
-- Real-time admin dashboard for monitoring active sessions
-- Seamless handoff preserving conversation context
-- Multi-session management for support agents
+Human Support Integration
 
-### Real-time Communication
-- WebSocket-based messaging with automatic reconnection
-- Connection status indicators
-- Typing indicators and message timestamps
-- Robust error handling and recovery
+    One-click escalation from AI to human agents
+    Real-time admin dashboard for monitoring active sessions
+    Seamless handoff preserving conversation context
+    Multi-session management for support agents
 
-### Authentication & Security
-- Secure session management with PostgreSQL storage
-- bcrypt password hashing
-- Role-based access control (admin/user)
-- CORS configuration for secure cross-origin requests
+Real-time Communication
 
-## 🔐 Security Features
+    WebSocket-based messaging with automatic reconnection
+    Connection status indicators
+    Typing indicators and message timestamps
+    Robust error handling and recovery
 
-- Secure session handling with HTTP-only cookies
-- Input validation using Zod schemas
-- Rate limiting and connection management
-- Environment-based configuration
-- Secure admin access controls
+Authentication & Security
 
-## 🌟 Deployment
+    Secure session management with PostgreSQL storage
+    bcrypt password hashing
+    Role-based access control (admin/user)
+    CORS configuration for secure cross-origin requests
 
-### Production Build
+🔐 Security Features
 
-```bash
+    Secure session handling with HTTP-only cookies
+    Input validation using Zod schemas
+    Rate limiting and connection management
+    Environment-based configuration
+    Secure admin access controls
+
+🌟 Deployment
+Production Build
+
 npm run build
-```
 
-### Environment Variables for Production
+Environment Variables for Production
 
 Ensure all required environment variables are set:
-- `DATABASE_URL` - PostgreSQL connection string
-- `SESSION_SECRET` - Secure session secret
-- `NODE_ENV=production`
-- `OPENAI_API_KEY` (optional)
 
-### Database Migration
+    DATABASE_URL - PostgreSQL connection string
+    SESSION_SECRET - Secure session secret
+    NODE_ENV=production
+    OPENAI_API_KEY (optional)
 
-```bash
+Database Migration
+
 npm run db:push
-```
 
-## 🤝 Contributing
+🤝 Contributing
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+    Fork the repository
+    Create your feature branch (git checkout -b feature/amazing-feature)
+    Commit your changes (git commit -m 'Add some amazing feature')
+    Push to the branch (git push origin feature/amazing-feature)
+    Open a Pull Request
 
-## 📄 License
+📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙋‍♂️ Support
+This project is licensed under the MIT License - see the LICENSE file for details.
+🙋‍♂️ Support
 
 For support, email support@assisthub.com or create an issue in this repository.
+🎉 Acknowledgments
 
-## 🎉 Acknowledgments
+    Built with shadcn/ui for beautiful UI components
+    Powered by OpenAI for intelligent AI responses
+    Database hosted on Neon for serverless PostgreSQL
+    Icons by Lucide React
 
-- Built with [shadcn/ui](https://ui.shadcn.com/) for beautiful UI components
-- Powered by [OpenAI](https://openai.com/) for intelligent AI responses
-- Database hosted on [Neon](https://neon.tech/) for serverless PostgreSQL
-- Icons by [Lucide React](https://lucide.dev/)
-
----
-
-**Made with ❤️ for better customer support experiences**
+Made with ❤️ for better customer support experiences
